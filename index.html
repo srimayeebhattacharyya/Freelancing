@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Srimayee Bhattacharyya | Data Analyst & Developer</title>
-<meta name="description" content="Portfolio of Srimayee Bhattacharyya — Data Analyst working with Python, SQL, Excel, Power BI and Looker Studio.">
+<title>Srimayee Bhattacharyya | Data Analyst & Web Developer</title>
+<meta name="description" content="Portfolio of Srimayee Bhattacharyya — Data Analyst & Web Developer working with data cleaning, Python, SQL, Power BI dashboards and web/backend development.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -26,10 +26,15 @@ h1{font:600 clamp(48px,6.5vw,78px)/.99 var(--display);margin:0;max-width:650px;l
 h1 span{color:var(--leaf);font-style:italic}
 .role{margin:24px 0 14px;color:#e1e9df;font-size:18px;font-weight:600}
 .intro{max-width:530px;color:#c0d0c6;margin:0;font-size:15px}
+.profile-frame{width:min(220px, 100%);margin-top:18px;padding:0;border:2px solid rgba(184,227,84,.55);background:transparent;box-shadow:0 12px 26px rgba(5,17,13,.18);border-radius:50%;overflow:hidden;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+.profile-photo{width:100%;height:100%;display:block;border-radius:50%;border:0;object-fit:cover;object-position:42% 18%;transform:scale(1.08)}
 .hero-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px;align-items:center}
 .hero-links .button{margin:0}
-.contact-mini{display:flex;gap:18px;flex-wrap:wrap;margin-top:25px;color:#c0d0c6;font:11px var(--mono)}
+.contact-mini{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:25px;color:#c0d0c6;font:11px var(--mono)}
+.contact-mini a{color:#c0d0c6}
 .contact-mini a:hover{color:var(--leaf)}
+.contact-mini > *{display:inline-flex;align-items:center;justify-content:center;min-height:28px}
+.contact-mini .channel,.contact-mini a.channel{padding:0 10px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.03);color:#dfe7e1}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:0 18px;background:var(--leaf);color:var(--forest);font-size:13px;font-weight:700;border:1px solid var(--leaf);transition:transform .2s,background .2s}
 .button:hover{transform:translateY(-2px);background:#d0f27b}
 .button.secondary{background:transparent;color:white;border-color:#668579}
@@ -91,12 +96,14 @@ section{padding:76px 7.2%}
 .cta{position:relative;overflow:hidden;background:var(--forest);color:white;text-align:left}
 .cta:after{content:"DATA → DECISIONS";position:absolute;right:-15px;bottom:-17px;color:rgba(255,255,255,.045);font:600 72px var(--display);white-space:nowrap;pointer-events:none}
 .cta .section-kicker{color:var(--leaf)}.cta .section-title{color:white;font-size:40px;margin:0 0 10px}
-.cta p{color:#c0d0c6;max-width:560px;margin:0 0 22px;font-size:14px}.cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cta p{color:#c0d0c6;max-width:560px;margin:0 0 22px;font-size:14px}.cta-actions{display:flex;gap:10px;flex-wrap:wrap}.cta-channel-list{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.cta-channel-list .button.secondary{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:0 18px;background:transparent;color:white;border-color:#668579}.cta-channel-list .button.secondary:hover{border-color:var(--leaf);color:var(--leaf)}
 footer{padding:22px 7.2%;border-top:1px solid rgba(255,255,255,.12);background:#0e3028;color:#9eb1a4;font:10px var(--mono);display:flex;justify-content:space-between;gap:15px}
 @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes grow{from{transform:scaleY(.1);opacity:.35}to{transform:scaleY(1);opacity:1}}
 @media(max-width:850px){header{grid-template-columns:1fr  .8fr;padding-left:5%;padding-right:5%;gap:5%}nav{padding:0 5%;gap:18px}section{padding:60px 5%}.service-grid{grid-template-columns:repeat(2,1fr)}.service:nth-child(2){border-right:0}.service:nth-child(-n+2){border-bottom:1px solid #d5dfd4}.skill-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){header{display:block;grid-template-columns:none;padding:32px 6% 38px;min-height:0}.hero-copy{padding:0 0 26px}.profile-frame{margin:22px auto 0}.hero-panel{max-width:100%;margin:0 auto}.hero-links,.cta-actions,.cta-channel-list{display:flex;flex-wrap:wrap}.nav{padding:0 6%}.section-title br{display:none}.service-grid{grid-template-columns:1fr 1fr}.skill-grid{grid-template-columns:1fr 1fr}.project{grid-template-columns:1fr}.timeline{padding-left:22px;margin-left:4px}}
 @media(max-width:620px){header{display:block;padding:34px 7% 46px;min-height:0}header:after{background:rgba(18,59,49,.91)}.hero-copy{padding:24px 0 30px}h1{font-size:52px}.role{font-size:15px}.hero-panel{margin:12px auto 0;padding:18px;box-shadow:8px 9px 0 rgba(184,227,84,.2)}.signal-number{font-size:48px}.contact-mini{font-size:10px;gap:10px 15px}nav{position:relative;gap:17px;padding:0 7%;font-size:10px}nav a{padding:13px 0}section{padding:48px 7%}.section-heading{display:block}.section-note{margin-top:12px}.grid-2{grid-template-columns:1fr;gap:26px}.service-grid{grid-template-columns:1fr 1fr}.service{padding:16px;min-height:160px}.service h3{font-size:16px}.project{grid-template-columns:1fr;gap:10px;padding:22px 0}.job-head{display:block}.date{display:block;margin-top:5px}.skill-grid{grid-template-columns:1fr 1fr}.skill{padding:16px;min-height:126px}.cta .section-title{font-size:32px}.cta:after{font-size:43px;bottom:-8px}footer{padding:18px 7%;display:block}footer span{display:block;margin-top:5px}}
+@media(max-width:480px){.button,.hero-links .button,.cta-actions .button,.cta-channel-list .button{width:100%;justify-content:center}.hero-links,.cta-actions,.cta-channel-list{display:grid;grid-template-columns:1fr}.contact-mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}.contact-mini > *{justify-content:flex-start}.contact-mini .channel,.contact-mini a.channel{justify-content:flex-start;padding:8px 10px}.nav{display:flex;flex-wrap:wrap;gap:10px 18px}.nav a{padding:10px 0}.service-grid,.skill-grid{grid-template-columns:1fr}.h1,h1{font-size:43px}.section-title{font-size:30px}.profile-frame{width:min(180px,72vw)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -107,16 +114,20 @@ footer{padding:22px 7.2%;border-top:1px solid rgba(255,255,255,.12);background:#
   <div class="hero-copy">
     <div class="eyebrow">Data, decisions, delivery</div>
     <h1>Srimayee<br><span>Bhattacharyya</span></h1>
-    <div class="role">Data analyst with a developer's mindset.</div>
-    <p class="intro">I work across the full journey: make messy data usable, find the signal with Python and SQL, then turn the answer into a dashboard people can act on.</p>
+    <div class="role">Data Analyst &amp; Web Developer</div>
+    <p class="intro">I help with data cleaning and analysis using Python and SQL, build Power BI dashboards and reporting solutions, and develop responsive web experiences and backend functionality with Python/Django.</p>
+    <div class="profile-frame" aria-label="Profile portrait">
+      <img class="profile-photo" src="portrait.jpg" alt="Srimayee Bhattacharyya portrait">
+    </div>
     <div class="hero-links">
       <a class="button" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
       <a class="button secondary" href="#contact">Let's talk</a>
     </div>
     <div class="contact-mini">
-      <a href="mailto:srimayeebhattacharyya.11sc.2020@gmail.com">Email ↗</a>
+      <a href="mailto:srimayeebhattacharyya.11sc.2020@gmail.com">Email</a>
+      <a class="channel" href="https://www.linkedin.com/in/srimayeebhattacharyya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="channel" href="https://github.com/srimayeebhattacharyya" target="_blank" rel="noopener noreferrer">GitHub</a>
       <span>Serampore, Hooghly</span>
-      <span>Analytics + software</span>
     </div>
   </div>
   <div class="hero-panel" aria-label="Credit card fraud analysis project overview">
@@ -142,7 +153,7 @@ footer{padding:22px 7.2%;border-top:1px solid rgba(255,255,255,.12);background:#
   <div class="grid-2">
     <div class="about-copy">
       <h3>Technical enough to dig in. Clear enough to bring people along.</h3>
-      <p>I am a Computer Science and Engineering graduate with hands-on experience in analytics and software development. I move between Python, SQL and spreadsheets to understand the data, and BI tools to make the outcome useful. My developer experience adds a practical understanding of APIs, databases and how software systems fit together.</p>
+      <p>I am a Computer Science and Engineering graduate with hands-on experience in both data analytics and software development. My work combines Python, SQL, Excel, Power BI and dashboarding with practical web development experience, including Python/Django and backend/API work. This lets me approach projects from both the analysis side and the application side, so I can turn raw data into useful insights and also help bring digital solutions to life.</p>
     </div>
     <div class="focus-block">
       <h3>My working toolkit</h3>
@@ -161,10 +172,10 @@ footer{padding:22px 7.2%;border-top:1px solid rgba(255,255,255,.12);background:#
 <section id="services">
   <div class="section-heading"><div><p class="section-kicker">How I can contribute</p><h2 class="section-title">Useful work, end to end.</h2></div><p class="section-note">From the first untidy file to a clear view of what is happening.</p></div>
   <div class="service-grid">
-    <div class="service"><span class="service-index">01 / PREPARE</span><h3>Make data reliable</h3><p>Clean, organize and prepare Excel, CSV and tabular data for analysis.</p></div>
-    <div class="service"><span class="service-index">02 / INVESTIGATE</span><h3>Find the signal</h3><p>Use Python, Pandas and SQL to explore patterns and summarize findings.</p></div>
-    <div class="service"><span class="service-index">03 / COMMUNICATE</span><h3>Build the dashboard</h3><p>Create focused Power BI and Looker Studio views with useful KPIs.</p></div>
-    <div class="service"><span class="service-index">04 / REPORT</span><h3>Make it actionable</h3><p>Turn spreadsheet analysis into structured reports, charts and clear takeaways.</p></div>
+    <div class="service"><span class="service-index">01 / DATA</span><h3>Data Cleaning &amp; Analysis</h3><p>Clean, organize and analyze Excel, CSV and tabular datasets using Python, Pandas and SQL.</p></div>
+    <div class="service"><span class="service-index">02 / BI</span><h3>Power BI &amp; Dashboard Development</h3><p>Create clear dashboards and reports using Power BI, DAX, Power Query and Looker Studio.</p></div>
+    <div class="service"><span class="service-index">03 / WEB</span><h3>Website &amp; Web Development</h3><p>Build responsive websites and practical web applications using HTML, CSS, JavaScript and Django.</p></div>
+    <div class="service"><span class="service-index">04 / BACKEND</span><h3>Backend &amp; Database Development</h3><p>Develop REST APIs and backend functionality using Python/Django or my existing backend technologies, with SQL/database integration.</p></div>
   </div>
 </section>
 
@@ -227,6 +238,34 @@ footer{padding:22px 7.2%;border-top:1px solid rgba(255,255,255,.12);background:#
       </ul>
     </div>
   </article>
+
+  <article class="project">
+    <div>
+      <div class="meta">Web Development · Software Project</div>
+      <h3>Government PGIP Portal</h3>
+    </div>
+    <div>
+      <p>Web and software development project work aligned with practical, user-facing portal functionality.</p>
+      <ul>
+        <li>Worked on a government portal-related project within my broader web and software development experience.</li>
+        <li>Applied frontend and backend development principles in a real-world application context.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="project">
+    <div>
+      <div class="meta">Web Development · Application Project</div>
+      <h3>HappyTummy</h3>
+    </div>
+    <div>
+      <p>Development-focused project work built around practical web application functionality.</p>
+      <ul>
+        <li>Contributed to the project as part of my hands-on web and software development work.</li>
+        <li>Focused on building usable, application-oriented features and web functionality.</li>
+      </ul>
+    </div>
+  </article>
 </section>
 
 <section id="experience" style="background:#fafbfc">
@@ -265,16 +304,20 @@ footer{padding:22px 7.2%;border-top:1px solid rgba(255,255,255,.12);background:#
   <div class="skill-grid">
     <div class="skill"><strong>Data Analytics</strong><span>Python · Pandas · SQL · Excel</span></div>
     <div class="skill"><strong>Business Intelligence</strong><span>Power BI · DAX · Power Query · Looker Studio</span></div>
-    <div class="skill"><strong>Data Analysis</strong><span>Data Cleaning · EDA · Data Visualization</span></div>
-    <div class="skill"><strong>Development</strong><span>HTML · CSS · Django · JavaScript · Git · GitHub</span></div>
+    <div class="skill"><strong>Web Development</strong><span>HTML · CSS · JavaScript · Django</span></div>
+    <div class="skill"><strong>Backend &amp; Databases</strong><span>Python · APIs · SQL · Git · GitHub</span></div>
   </div>
 </section>
 
 <section id="contact" class="cta">
   <p class="section-kicker">Open to freelance projects</p>
-  <h2 class="section-title">Have a dataset that needs attention?</h2>
-  <p>Let's turn your data into something clear, useful and easy to understand.</p>
+  <h2 class="section-title">Have a dataset, dashboard, website or software project in mind?</h2>
+  <p>Let's turn your data into something clear, useful and easy to understand, or build a practical web solution that works.</p>
   <div class="cta-actions"><a class="button" href="mailto:srimayeebhattacharyya.11sc.2020@gmail.com">Email Srimayee ↗</a><a class="button secondary" href="#home">Back to top ↑</a></div>
+  <div class="cta-channel-list">
+    <a class="button secondary" href="https://www.linkedin.com/in/srimayeebhattacharyya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="button secondary" href="https://github.com/srimayeebhattacharyya" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
 </section>
 
 <footer>
